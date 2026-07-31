@@ -24,3 +24,26 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* Solution */
+body {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 32px;
+}
+
+.items-container {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+}
+
+/* We just need to fix the maximum item width. We don't need to deal with alignment
+   because we already defined text-align: center in the body. Besides, because
+   .item is not a flex item, it should be in principle a block, which assumes 
+   the usual column display.*/
+.item {
+    max-width: 200px;
+}
